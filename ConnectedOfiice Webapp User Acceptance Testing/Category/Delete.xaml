@@ -1,0 +1,212 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Delete" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="914,1204" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="46">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Delete" sap:VirtualizedContainerService.HintSize="496,1139" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Open Edge to website" sap:VirtualizedContainerService.HintSize="434,1017" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1c110189-5dc2-4e13-9ac1-aaf69db414da" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,791" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Login as bot" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c110189-5dc2-4e13-9ac1-aaf69db414da" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/" DesignTimeRectangle="56, 388, 231, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl aaname='Login' tag='A' /&gt;" FuzzyAccuracy="0.54" FuzzySelectorArgument="&lt;webctrl aaname='Login' tag='A' type='' class='nav-link text-dark' check:innerText='Login' /&gt;" Guid="64d581d9-9297-41fc-b4ea-4928c33df3c1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOsAAAAsCAYAAACE50/ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHnSURBVHhe7dkxUsJAAIVhz2NNZaWHYYaOA1jR4gwnsKfhAOkp6DgABXfQC6yJ5JENWUecgfg2+d/MVwgJVv9sxIfHyUuYv76F4+cHAEMasQLmNGIFzGnECpjTiBUwpxErYE4jVsCcRqyAOY1YAXMasQLmNGIFzGnECpjTiBUwpxErYE4jVsCcRqyAOS3jWLdh8fQcJqXFLvU+MAzaTWMtVqd4JvN12Cfev6nd8vS7StPNIX0NMABavrFysmIktIxjBcZB+4dYmxPxbLXtXHf+rEr5ecVmVv+8DEV1zXEdpvX7Oln3rWvav4fTF7nS+o01+juzI7qnFWrHNbHOwnQe31Op7wMyo/UY6yG8K6D4/Sjg7+iiCJsvjuJT8ppYm3vj1zhdkSOtx1ib4Nrf3l68fo53Ft6Pzf3tR9zytV8fg+t7E9cBOdH6izV5YlbascaPssQKOD8GJ/9/+tfHYGLFcGj3ibWjjueqL5iiqJOIFeOi9RtrJYpH2o/FlfgkvXw8JlaMi3bTWO/nh0doYAQ0y1iLVXQylpoTM3UKA8OmmcZan6KXOFUxQlo2sXKiYqy0TP5mBcZLI1bAnEasgDmNWAFzGrEC5jRiBcxpxAqY04gVMKcRK2BOI1bAnEasgDmNWAFzp4XwBZwRTX1RuuFpAAAAAElFTkSuQmCC" InformativeScreenshot="d54ccae6550b41f74ddd17a4c3bb55ea.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home Page - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Enter Email of Bot" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NTypeInto_1" IsPassword="True" ScopeIdentifier="1c110189-5dc2-4e13-9ac1-aaf69db414da" Text="35553367Bot@gmail.com" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Identity/Account/Login" DesignTimeRectangle="317, 392, 405, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT Input_Email'" FullSelectorArgument="&lt;webctrl id='Input_Email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Input_Email' tag='INPUT' type='email' class='form-control' aaname='Email' /&gt;" Guid="bd6a7b7b-f621-446b-8e2e-0f8b0731a5d7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZkAAAAqCAYAAABhjCahAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF2SURBVHhe7dgxagJhFIXR2V66dNlOcAvuxD6mEVyC2AR7VyAIL7loxGRSGJ3XnQMXhpm///hnqC/bfdX7h5mZ2TRLV2IQGDMz61j6Mly/WGyq5uuq2bLq9c3MzOy2pRvpRzpy3ZVLZPIhh1a7qsPxdM0BgFukG+lHOnIdmktkUqAcAIB7pSPpySgyqY8bDACPSEfSk1Fk8k8NAB6VnogMAC1EBoA2IgNAm8ki8/T8cn4CgBORAaCNyADQRmQAaCMyALQRGQDaiAwAbUQGgDYiA0AbkQGgjcgA0EZkAGgjMgC0ERkA2ogMAG1EBoA2IgNAG5EBoI3IANBGZABoIzIAtJksMgDwm8gA0EZkAGgjMgC0ERkA2vwZmdmy6nA8nwCAO6Qj6ckoMvN11Wp3PgUAd0hH0pNRZBabU31ywI0GgP9IN9KPdCQ9GUXmOzQpUA7ln5qZmdktSzfSj+vAZMN2//OFmZnZFEtfhlxzhMbMzKZculJV9QlgUQMAAeC1ZwAAAABJRU5ErkJggg==" InformativeScreenshot="601aa0d02f0abfd6b07fa46037288465.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Log in - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="317, 360, 38, 24" ElementType="Text" FriendlyName="'Email'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Email' check:innerText='Email' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACoAAAAcCAYAAAAX4C3rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADiSURBVFhH7ZNRDoMgDEB3lX3sY8cyfniSfeBNTDiKZMcw0UN0TApp1cQFuwyzvqQf0EAfBS5wElRUGhWVRkWlUdHPmaCr73A1Tzau7ITjABN1xi+4LaMFh/nvkCuaFvyKfxKNefpEwoZ4fWyOMFioMDdHbWHE1FpMStQXevQ40bepOJ9roBtw7HGGvnM8VKqTKxpPHYOIrw+yLPpmuxBltA3paq7oXkd3pbYLrZpQnGh8n2RdkR3lUoEyr37+XOQzxQ4fFqXvCCP+6CxRD9vXC7qjHS0ZFZVGRaVRUWlOIgrwAnr/OXpDgiIbAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Enter Password of Bot" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="1c110189-5dc2-4e13-9ac1-aaf69db414da" Text="35553367Bot!" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Identity/Account/Login" DesignTimeRectangle="317, 435, 405, 38" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT Input_Password'" FullSelectorArgument="&lt;webctrl id='Input_Password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Input_Password' tag='INPUT' type='password' class='form-control' aaname='Password' /&gt;" Guid="2385214d-4bbe-4e97-8b51-9a3337bf084f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZkAAAAqCAYAAABhjCahAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFSSURBVHhe7dixasJQAIXhvv/DlQ7FocXBwUkEF4tLuOUUExQK1erZvg/OkOTuPzcvAwBKRAaAmqvIHL9OY73ZjrfV53h9/zAzM7tp6Ub6kY5cWiKTDzm02x/GNE3ntwDwt3Qj/UhHLkOzRCYFygEA+K90JD2ZLZFJfdxgAHhEOpKezJbI5J8aADzqsiciA8BTiQwANSIDQI3IAFAjMgDUiAwANSIDQI3IAFAjMgDUiAwANSIDQI3IAFAjMgDUiAwANSIDQI3IAFAjMgDUiAwANSIDQI3IAFAjMgDUiAwANSIDQI3IAFAjMgDUiAwANSIDQI3IAFAjMgDU/BqZt9XnmKbp/AQA90tH0pPZEpn1Zjt2+8P5CQDul46kJ7MlMsev0099csCNBoB7pBvpRzqSnsyWyEQ+pEA5lH9qZmZmtyzdSD8uAxNXkQGAZxIZAErG+Aafb7GCGC/EFwAAAABJRU5ErkJggg==" InformativeScreenshot="7ac597b9b16071555f45c97c004451ed.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Log in - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="317, 403, 66, 24" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='' check:innerText='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAcCAYAAADcO8kVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHZSURBVFhH7ZTLjQIxDIa3FQ4ctizEgUo4DJ0gTSkgykAaisjGjyR2YsMypxXrX4pgHMexvzj5SiFTAcZRgHEUYBwFGEcBxlGAcRRgHAWYrOv0nTbTjb9ICgw6bLvRLfhE/Q6Mcril4z+AswJM1uWUO+eUrvz5iVoH5j6n3faQznf6RB9x1Y4Xshf584903ss5ijnuyX7KBp3bchhjOXnkGCWf3fzgGb4FZRSfru73OiZDOtYNsnCuJbzMh7TZz2mhT5wvCfexl/lE6/qOxIOApIVN+RjXm9e04tsBaWC0Vvphzn28rOdgjA21aCOv+CY6YTuO7gZMdMpABxvFHeCzejvm0vl5a628RzBAT4y+RduJGj51TrY9C08d5vr3SkODHCAe/JKN5iV8EzDu3WJbxXprLd/XV0kI51XRumOqKoQREJ5aB6idJMRjO8QAm1HwHwNjQXDAoF5dH7GuFAUw6v4MSdnevEoGmHEtP+TrwYyFor8o8JrfhnJi2j//n2RCPVBOzrFpuLRW5clXWB6QWQv7yXi1g9eDyeLAdBUgEV1gAVVGS6AVWYYsAkQJSrDFZrxXBU4do49bS1cD5Gj5KjChpgDjKMA4CjCOAoyjAOMowDgKMKZS+gGQcLLxDqrovQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c110189-5dc2-4e13-9ac1-aaf69db414da" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Identity/Account/Login" DesignTimeRectangle="317, 537, 70, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Log in'" FullSelectorArgument="&lt;webctrl id='login-submit' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login-submit' tag='BUTTON' type='submit' class='btn btn-primary' aaname='Log in' check:innerText='Log in' /&gt;" Guid="1aca1706-d600-4876-b281-530012b4ad09" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAqCAYAAAAUJM0rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHPSURBVGhD7Zq9TsMwEMd5DER5Kt4AiYUBHqIbL9IJZWck6tCVNUPF1k5UHdqlw9V/JzG246RHlKQhvpN+6oc/4vvV5y6+IQlWiChmOKK+vn/o4S2l+6eEbh/fowN5I3948MOIQiM63j1/0Ozlk2avaXyovJE/PPiyjCiY1JJCE0QGPMCHHUYULEa7k3yUB/iww4hCjQYHRQp82CGiahBRTEQUExHFREQxEVFMRBQTEcVkOqKSHe3VurNVoK0DOhe12KrB202wrVdE1DgQUUyuIGpDWf6IIk60TKr99DwmDrRYHfJXr59Bl541l/nsPm+fratjGQwrqjhHnMVqAe7Zouc47mhe9inG/V2UN0Y/K/zDXGJQUXVtzvd+wiWtdpR/uK9peWy3qwYUlS8y+K8ECeUOst/7fVqVntVHRCmmI4pZelqIn2BK8+ykvo9EVL740GFuJ5Qn081hPnZRlfATsCOUfCGrDEibWun1xiVRPfNvRDWW9ACMUBTKw905+UHul9GwjHJHVc+560oCoxQ1RkQUExHFREQxEVFMakXJtR+Lpms/cpHsl8aLZHI1UaHyRv7wUHs1EYFGmERH1GhsIG/k70tCOKIk6kNEsYLoDAZI81qV3Fb0AAAAAElFTkSuQmCC" InformativeScreenshot="c8534eac1d69f3a0fc2a27dbd0016112.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Log in - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Categories'" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c110189-5dc2-4e13-9ac1-aaf69db414da" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/" DesignTimeRectangle="56, 345, 231, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Categories'" FullSelectorArgument="&lt;webctrl aaname='Categories' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Categories' tag='A' type='' class='nav-link text-dark' check:innerText='Categories' /&gt;" Guid="5acac165-337a-416f-a9f0-04a250cb384e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOsAAAAsCAYAAACE50/ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALnSURBVHhe7dgxUttAGMXxnCc1FVVyGGbofAAqt2SGE9DTcAB6F+44AIXvkFxA0Vp6q29Xu5LFCPiM/2/mVwRJRp7Zt9+SHz+vfjebuz/N4d9fAA4plBVwTqGsgHMKZQWcUygr4JxCWQHnFMoKOKdQVsA5hbICzimUFXBOoayAcwplBZxTKCvgnEJZAecUygo4p1BWwDmFsr7X/r65uv7Vum9eSteBlSgfU9bDU3NzXMip7b5w75l6edD3um0eD+V7gDUoq5d1WMRjS8r6+nzbPfewK17/ckxWfBJl1bLGggWbp+bVXm8X9+llfWseN/3neC0r8EmUFcu6a7a1omZK0/fm+a27XjlCx+uF5+210mds98O7pfead5Zkc7DP7eIGEjadYWNKJ2uyYQXZZjO6zjEaM5T1yhqPhXPHXTM1M8ciTZZ15tnw+ZXnJd5n3nckbjaFMrdqZa3+CdAXdlzUgLJimrJaWe1CXPK3aRAXeSxJ5RgcC2YWuH7WPzsUZiiRfbdR6e0pYLTh2LLWJmj/c7NJxO8ff9bdM/6ewDzlCyZrbcK0Zspafe4oFKJS8uQ4G8qa/3v+vvpxti/r1KTW5jK6h6mKecp6ZbXHz2xhJ+yC7e87dbJWj5lHYeHXypWV0LzrqWVN7xuXdXojKU3bQf7ZgKWs+B9MpmBBYRKFBRsXdbxeOpLOTdbaRLLv0E+8li1SV4zS72xNHIPnyrrkZNEpf0cgp6xY1sBMtoKkrCWmOPkUzSddLhZk8jhqSjd1X3yPBWVNNoqUnq2dDE4rNy6VsnJZO+VCDpPOLtqwkMfH4CAt5lCWcinsgk9/f/i9ldLNHkmXlLVTKqSeLV2jqJijfEhZ3Vl8RAX8UL5fWdtpua1Mx3wKAudA+ZZlzY+2wlTFOVIupKxMVJwv5TL+ZgXOmEJZAecUygo4p1BWwDmFsgLOKZQVcE6hrIBzCmUFnFMoK+CcQlkB5xTKCjinUFbAuS5N8x96icVNOt6zJQAAAABJRU5ErkJggg==" InformativeScreenshot="75baccec86fed7b4df51a07d127cc8ba.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home Page - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c110189-5dc2-4e13-9ac1-aaf69db414da" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Categories" DesignTimeRectangle="1530, 390, 20, 20" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='IMG' aaname='                                              ' /&gt;" Guid="a10e76ac-5a17-4329-be58-b8adf1e4254b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANQSURBVEhLxZVLKLRhFMfH/ZLIPWLkNqIoKzYWlEs2lNkoGylGUiMSmsWEbISspGzYsrARketGbmVpbUNJpsG4+3/9j/d5el99rL7pO3Vq3sf/PL/znOc5hw1Btv8L+Pz8xO7uLqqqqhAeHo6QkBBx/q6oqMDW1pZofrNfAVdXV2hsbERcXByWl5dxeHgovrq6ioSEBNTW1uLy8tJQ/900oKGhAfn5+cjLy9OenZ2N6OhoyTg3N9fiERERiIqKQlZWliWmoKAANTU1xq4mwObmJhYWFv6Jr62tGbuaAA8PDxgZGUFJSQkcDoc4s1HO0/3kSlNcXIyBgQHc398bu5oAd3d3aG5uhs1mE+dlsjyhoaF6jSWhq2/+jZqwsDC9Vl9fj9vbW2NXE8Dv96OtrU0L+Upubm7gdDoFxkvlRW9sbCApKUk0TU1NouFlqzjqfT6fseu3ErlcLi2srq6WJ9jV1SWZJicnY3t7G0dHR0hNTRVoR0eHaAhSce3t7ZKsMg0IBAJSPyWsrKyU4J6eHg3Y2dnB8fGxBnR2dkpsXV2djuvt7cXj46Os0zTg+fkZHo9HC0tLS/Hx8SEBrDEBbDoFIJSno7ERVdzQ0BCenp5knaYBr6+vmJiY0EK+aQLcbrcFcHJyogHd3d0SW15eruNGR0fx8vIi6zQNeH9/x8zMjBbm5OTIWn9/vzQaAXt7ewJIS0sTAMtH49NWcVNTU3h7e5N1mgYw2/n5edlMASgcHBy0AE5PTwXAU7F8NL5/xlA3NzcniSnTAF7o0tISYmNjNYBl471ERkYiJSUF+/v7GsDN+vr6JLaoqEhiYmJisLi4aBmAGkBbWVmR964ArOX4+Lg0FwEHBwc4OzsTAGfR8PCwxLHrGRMfHy+98iNgfX0d6enpIrbb7fKyJicnJTN1AgXgqbxer8QVFhZKDC/fPIdoFgAz5OuhmJOUM2V2dlbK9v0OOCL46micRyopNqPZLABmV1ZWJuLMzEyZ9dPT03KCxMREyY4Qwli2sbExGRXcmDG8C/6/MJsFcHFxIR1MMTs1IyNDSqO+mTlLyN9c40zimvpmP5yfnxu7fZkFwCnY2toqF8h3rgJ/c2qoZUxLSwuur6+N3b7MAgiGBRkA/AFhKSXVhQAGxgAAAABJRU5ErkJggg==" InformativeScreenshot="0d2d7bdcb6cff61bf65c547dd986c120.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Categories - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Delete'" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c110189-5dc2-4e13-9ac1-aaf69db414da" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Categories/Delete/1116a6cb-dc28-47c7-be6a-88a28711ecd7" DesignTimeRectangle="317, 477, 72, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Delete'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-danger' aaname='Delete' check:text='Delete' /&gt;" Guid="72fdf56f-1a43-497f-9217-c214989e1440" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAqCAYAAAAZOr1sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH3SURBVGhD7Zo9bgIxEEZzqRQ5QIqcJAfIQai5Bg2XQKKMFBEhinQ0gIRCgSaMWbyf7dn1GNgkkudJnwRrry0//EPhBzKKMGGFBMK+3z/o6/WNPp9eaPH4XG14/OyBfcR4YVxYu6g47COW5oWxUeml2sNeEC/MZpcc9oJ4YVJlyzmICVMEMWGKICZMEcSEKYKYMEUQE6YIYsIUQUyYIsj/Ejaa05F2tB8JZX8Y5GZhm2XTQMRxNhbr96YaYctp9HxKB9fqijbB80yuELae7Yi2c1oLZfcKMpAwzpj2266yjtQt7JTJ6lQYzjI3QOAwgfqSMPcM8H01PwgC4nr7KQwyrLBIQDIbGhl+MLGwRGA6a6UZlu2nMMiwwtxedhkwfm4TvB8J4rLk8IhmbSpM0U9hkN+bYc2vLCIKE5acp0eYpp/CIMPvYZfBuIFkTk1BWG4ZycIKT+dMkAGFnf9atAOOvwsJhOmWkbwkr9+vpCDDCHP7TLr/uLrJqblq95tI2KWdYPCnOgdsVziJs/0UBrmPsITuJZHUR9mxME4jrSVuG/Y6mGm9/RQGuVlYDUFMmCKICVMEMWGKICZMEcSEKYKYMEUQE6YIYsIUQbwwu+4kp/O6k12ok9N5oc6ubKZhH51XNhkuZKO1i+Pxs4dYFhMIM/KYsCKIfgC35XmuoSuT6gAAAABJRU5ErkJggg==" InformativeScreenshot="488c250c6e375f9c4866eaffa38e2027.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Delete Category - Connected Office: Device Management' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1616, 916" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAQhJREFUWEftl9ENwjAMRDsCIzAKm8AGsAGMwEaMwgiMQP0qTkKy09YkfCDypJNKnFzckLTu0AnYmW6mh+nZUHjuTbOcTdHglmKOkINJnS6mjSlCfTLgdTJpLKvsYIkI0nGOTxIQ3Bhjmcsh49Kdi5oE8GYs+8ux1libczv9ylOcZ20CWsZaOYqBgKup9pg6ioHG9AR6Ar+XAG8wjtz9dS2y7SKdAEaKYSyy7UIxRymAiWKYi2y7UMxRCvCaxghjrkW2XaQTaE1PoCdQnEfHZ6kkq0ElWZiAilIqnm9xNDFHWJRSKis7KuOWK4HX+zdH9IieaFXvzWlxhXl66e9oJfYXnuEHyT8zDCPMjw3PbnWtNQAAAABJRU5ErkJggg==" InformativeScreenshot="955e465212e5ff21b9988ac58393abc0.png" Selector="&lt;html app='msedge.exe' url='https://connectedoffice-devicemanagement.azurewebsites.net/' /&gt;" Url="https://connectedoffice-devicemanagement.azurewebsites.net/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
