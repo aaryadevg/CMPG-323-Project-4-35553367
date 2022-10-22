@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Update" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="914,1974" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Update" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="746,2200" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -40,10 +40,11 @@
       <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
       <x:String>UiPath.Shared.Activities.Business</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="50">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="100">
       <AssemblyReference>Microsoft.CSharp</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
@@ -93,21 +94,28 @@
       <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Update" sap:VirtualizedContainerService.HintSize="622,1909" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Update" sap:VirtualizedContainerService.HintSize="622,2135" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Open Edge to website" sap:VirtualizedContainerService.HintSize="560,1787" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1c110189-5dc2-4e13-9ac1-aaf69db414da" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Open Edge to website" sap:VirtualizedContainerService.HintSize="560,2013" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1c110189-5dc2-4e13-9ac1-aaf69db414da" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="526,1561" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="526,1747" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -180,23 +188,30 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='CurrentElement' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='src'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="464,831" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1c110189-5dc2-4e13-9ac1-aaf69db414da" Version="V3">
+            <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='CurrentElement' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='src'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="464,1017" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1c110189-5dc2-4e13-9ac1-aaf69db414da" Version="V3">
               <uix:NForEachUiElement.Body>
                 <ActivityAction x:TypeArguments="x:Int32">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,557" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,743" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="338,146" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" Version="V3">
+                      <uix:NClick.InUiElement>
+                        <InArgument x:TypeArguments="ui:UiElement">
+                          <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">CurrentElement</CSharpValue>
+                        </InArgument>
+                      </uix:NClick.InUiElement>
+                    </uix:NClick>
                     <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Category Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="1c110189-5dc2-4e13-9ac1-aaf69db414da" Text="UPDATED" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Categories/Edit/eec26277-d5de-4705-bf42-37db4575d9a3" DesignTimeRectangle="317, 441, 405, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Managing access'" FullSelectorArgument="&lt;webctrl id='CategoryDescription' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='CategoryDescription' tag='INPUT' type='text' class='form-control' aaname='Category Description' /&gt;" Guid="e06fb784-12ae-49da-a4c6-62cb23bda3c5" ImageBase64="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" InformativeScreenshot="e25e5f25c7a03b3765972e7ea28abde8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edit Category - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target DesignTimeRectangle="317, 409, 149, 24" ElementType="Text" FriendlyName="'Category Description'" FullSelectorArgument="&lt;webctrl aaname='Category Description' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Category Description' tag='LABEL' type='' class='control-label' check:innerText='Category Description' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAAAcCAYAAAByIR3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM2SURBVHhe7ZZRTsMwDIa5Cg88cCzEAyfZw3YRhNSjbOIYk+AQIXGd1LGdJqMNdJs/KRI0iWP//pvuwRlGZ8xkRnfMZEZ3zGRGd8xkRnfMZEZ3zGRGd8xkRnfMZNfKeXAvT89ud8T/l3A8uMenN/dxxv9XRjcZFvBIx+vgvnD6btB0gHFwJ1zyb1yzyU57TcRv9/F6gbCQ9AYasRRopBT/a3gDs70M3/jkeoDc//jCyEy2WgI3bjKg89vfi3822afbtV6//DNCkh5vQjqI2fi+/SdOTOT7/V7NsPCMrOOiRXMc43kH9x7iivPCDT1zI82ZTNtbq4/nnc2P8eh87AVo4tdGbeBMnlvSaexjjDHlJ+Mn3ZZofC6dNzGZTDuowGlP12HyVDAtlmiY3Aci0mJS06ZY46cqb/woPjkv7qOxmnJiVOZj84FafWLeNyfVjo1iGmYm8/PZBcDjJVNIHWjj1ZuMaXORxvQZxJF65SbjhzciEmdJB0KSwuV0nWgCksUq3bbsOQqQrxubTp9B3rSxnFJOCN1frU/RJKI2ngAN5vM8N4gvc+Wx1bNW1pjr8KubLBDfrjRmTYZvNV2fBmmCJjSNBYXpOWZNLpgjN5U0naBiMtAA4jXUR9bwJqgGJUznEFSTKdqw51WTLdK4ZrKKoAlYlxctEhcFNzQ07Olssmx/+Fs7j1KKA9CaGupL4KeRmO1+TIYLRDEMLcm6yQpCUWCPbCjETrEuucp1c4Q8wroQd66xwEwcXnO1PgbdL/RjLDEZ36uele1donHVZAF8y0TBYTMmwYuBw9geLQHYx5L363YpITS5iOOfkfNAJBYbhKydHwl57Ad/VmGeosbBPHlDa/X5eTqXNxt1p0Yi69tNxnTQcoJnWu5raNxkshEICM2dBt2YzfuDT8rbMa0hBUUh0mDFpgbiCDEVUUYRyLpaAzKUhpaAOOQcHMUbcK4+Psf0SnmlMe1tN5nfw87JDAYQjWMOq2l8gck2hSLAMti1fyusrtN6bN5k6lu8hA03YxFmshbCVatd2aXP3m/Qr/ObwEzWhvwtuJ7B0m+MNW/FLWEmM+4ZM5nRHTOZ0R0zmdEZ534APOHFdH3CHyQAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
