@@ -40,7 +40,7 @@
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="46">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="92">
       <AssemblyReference>Microsoft.CSharp</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
@@ -86,6 +86,11 @@
       <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Read" sap:VirtualizedContainerService.HintSize="622,1933" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -162,9 +167,9 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NClick ClickType="Single" DisplayName="Click 'Zones'" sap:VirtualizedContainerService.HintSize="464,166" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c110189-5dc2-4e13-9ac1-aaf69db414da" Version="V3">
+            <uix:NClick ClickType="Single" DisplayName="Click 'Categories'" sap:VirtualizedContainerService.HintSize="464,166" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1c110189-5dc2-4e13-9ac1-aaf69db414da" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/" DesignTimeRectangle="56, 272, 231, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Zones'" FullSelectorArgument="&lt;webctrl aaname='Zones' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zones' tag='A' type='' class='nav-link text-dark' check:innerText='Zones' /&gt;" Guid="3d38a2f4-f76c-4d5e-80c1-143085727070" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOsAAAAsCAYAAACE50/ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH2SURBVHhe7dixbcJAAIXhzJOaiioZBomOAVLREokJ6GkYgJ6CjgEo2CFZ4BIwDx++syHSWXmW/id9TWxImj9neHkdvYfZx2c4fX8BMKQRK2BOI1bAnEasgDmNWAFzGrEC5jRiBcxpxAqY04gVMKcRK2BOI1bAnEasgDmNWAFzGrEC5jRiBcxpxAqY04gVMKeVi3W/CKPxW6f5PvM6AJ00YgXMaf0+BkcBTzbH/D0AOmk9xroLc52qs3U4NK4fNtNbyJVpWJ1y1xdhG7/Xr+SEPq3DJLpevaa+/uh3Ac60nmI9htUsH879tZRCrAObhklyf/SerY/f1T1pqGfEiuHQeok1DiQ5BaO46mtRwNdTOH4PPUKn7xu9brlL3ut8z3Z5vZ453YEh0MrH+uBzah1c26Nq80SM7osed6tY7x+Pmy6/Pzl5OVUxLFrZWOPPji0n2e2kKxFr8lm1Qadt5j6+8MJQaAVjjT+Ldpxef34MfvJkvT0Gd8k9NgPetGKx1idmuyqwOOqUAn4u1vi+hmv0bX9X/Y8C8Kb9Q6xt93c/Fl9+non1IveNcEeshIoh0cp/wQSgKI1YAXMasQLmNGIFzGnECpjTiBUwpxErYE4jVsCcRqyAOY1YAXMasQLmNGIFzGnECpjTiBUwpxErYE4jVsBctRB+AK2JPkb+Jqh4AAAAAElFTkSuQmCC" InformativeScreenshot="22bd0f996383015be05513a6136077b5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home Page - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Categories" DesignTimeRectangle="56, 345, 231, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Categories'" FullSelectorArgument="&lt;webctrl aaname='Categories' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Categories' tag='A' type='' class='nav-link text-dark' check:innerText='Categories' /&gt;" Guid="1ca8c036-1a7b-4361-a814-de1a6381363d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOsAAAAsCAYAAACE50/ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALnSURBVHhe7dgxUttAGMXxnCc1FVVyGGbofAAqt2SGE9DTcAB6F+44AIXvkFxA0Vp6q29Xu5LFCPiM/2/mVwRJRp7Zt9+SHz+vfjebuz/N4d9fAA4plBVwTqGsgHMKZQWcUygr4JxCWQHnFMoKOKdQVsA5hbICzimUFXBOoayAcwplBZxTKCvgnEJZAecUygo4p1BWwDmFsr7X/r65uv7Vum9eSteBlSgfU9bDU3NzXMip7b5w75l6edD3um0eD+V7gDUoq5d1WMRjS8r6+nzbPfewK17/ckxWfBJl1bLGggWbp+bVXm8X9+llfWseN/3neC0r8EmUFcu6a7a1omZK0/fm+a27XjlCx+uF5+210mds98O7pfead5Zkc7DP7eIGEjadYWNKJ2uyYQXZZjO6zjEaM5T1yhqPhXPHXTM1M8ciTZZ15tnw+ZXnJd5n3nckbjaFMrdqZa3+CdAXdlzUgLJimrJaWe1CXPK3aRAXeSxJ5RgcC2YWuH7WPzsUZiiRfbdR6e0pYLTh2LLWJmj/c7NJxO8ff9bdM/6ewDzlCyZrbcK0Zspafe4oFKJS8uQ4G8qa/3v+vvpxti/r1KTW5jK6h6mKecp6ZbXHz2xhJ+yC7e87dbJWj5lHYeHXypWV0LzrqWVN7xuXdXojKU3bQf7ZgKWs+B9MpmBBYRKFBRsXdbxeOpLOTdbaRLLv0E+8li1SV4zS72xNHIPnyrrkZNEpf0cgp6xY1sBMtoKkrCWmOPkUzSddLhZk8jhqSjd1X3yPBWVNNoqUnq2dDE4rNy6VsnJZO+VCDpPOLtqwkMfH4CAt5lCWcinsgk9/f/i9ldLNHkmXlLVTKqSeLV2jqJijfEhZ3Vl8RAX8UL5fWdtpua1Mx3wKAudA+ZZlzY+2wlTFOVIupKxMVJwv5TL+ZgXOmEJZAecUygo4p1BWwDmFsgLOKZQVcE6hrIBzCmUFnFMoK+CcQlkB5xTKCjinUFbAuS5N8x96icVNOt6zJQAAAABJRU5ErkJggg==" InformativeScreenshot="63d0ee16204ee8b8e7c20709a362b5d7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Categories - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
               </uix:NClick.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -173,7 +178,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='src'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='5' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="464,750" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1c110189-5dc2-4e13-9ac1-aaf69db414da" Version="V3">
+            <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='src'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='5' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="464,750" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1c110189-5dc2-4e13-9ac1-aaf69db414da" Version="V3">
               <uix:NForEachUiElement.Body>
                 <ActivityAction x:TypeArguments="x:Int32">
                   <ActivityAction.Argument>
